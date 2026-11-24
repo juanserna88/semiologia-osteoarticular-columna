@@ -395,7 +395,7 @@ button,input,select,textarea{font-family:Outfit,system-ui,sans-serif}
       <a class="hx-i" href="#cervical"><i>3</i><span><b>Columna cervical</b><small>Trauma, imágenes, Spurling</small></span><em>→</em></a>
       <a class="hx-i" href="#dorsal"><i>4</i><span><b>Columna dorsal</b><small>Inspección y causas</small></span><em>→</em></a>
       <a class="hx-i" href="#lumbar"><i>5</i><span><b>Columna lumbar</b><small>Mecánico vs inflamatorio</small></span><em>→</em></a>
-      <a class="hx-i" href="#metodo"><i>6</i><span><b>Método semiológico</b><small>Inspección, palpación, movilidad lumbar</small></span><em>→</em></a>
+      <a class="hx-i" href="#metodo"><i>6</i><span><b>Método semiológico</b><small>Inspección, palpación, movilidad, maniobras</small></span><em>→</em></a>
       <a class="hx-i" href="#discopatia"><i>7</i><span><b>Discopatía</b><small>Disco y raíz nerviosa</small></span><em>→</em></a>
       <a class="hx-i" href="#signos"><i>8</i><span><b>Signos semiológicos</b><small>Lasègue, Bragard, Neri · simulador</small></span><em>→</em></a>
     </div>
@@ -648,13 +648,14 @@ button,input,select,textarea{font-family:Outfit,system-ui,sans-serif}
 <section class="sec" id="metodo" style="padding-top:40px"><div class="wrap">
   <div class="eyebrow">Examen físico de la columna · siempre en este orden</div>
   <h2>Método semiológico</h2>
-  <p class="lead">Inspección, palpación y movilidad. Paciente de pie, en ropa interior o bata abierta por detrás, con la columna expuesta desde el occipucio hasta el pliegue glúteo.</p>
+  <p class="lead">Inspección, palpación, movilidad y maniobras específicas. Paciente de pie, en ropa interior o bata abierta por detrás, con la columna expuesta desde el occipucio hasta el pliegue glúteo.</p>
   <div class="met-flow">
     <div class="mf"><b>1</b><span>Inspección</span><small>mirar antes de tocar</small></div><span class="ar">→</span>
     <div class="mf"><b>2</b><span>Palpación</span><small>apófisis, músculos, sacroilíacas</small></div><span class="ar">→</span>
-    <div class="mf dk"><b>3</b><span>Movilidad</span><small>énfasis en columna lumbar</small></div>
+    <div class="mf"><b>3</b><span>Movilidad</span><small>énfasis en columna lumbar</small></div><span class="ar">→</span>
+    <div class="mf dk"><b>4</b><span>Maniobras</span><small>específicas de columna lumbar</small></div>
   </div>
-  <div class="tabs met-tabs" data-tabs="met"><button class="on" data-p="ins">1 · Inspección</button><button data-p="pal">2 · Palpación</button><button data-p="mov">3 · Movilidad lumbar</button></div>
+  <div class="tabs met-tabs" data-tabs="met"><button class="on" data-p="ins">1 · Inspección</button><button data-p="pal">2 · Palpación</button><button data-p="mov">3 · Movilidad lumbar</button><button data-p="man">4 · Maniobras específicas</button></div>
 
   <div class="pane on" data-pane="met-ins">
     <div class="grid3">
@@ -734,6 +735,41 @@ button,input,select,textarea{font-family:Outfit,system-ui,sans-serif}
       <div class="note"><b>Normal:</b> la distancia aumenta 5 cm o más (de 10 a 15 cm o más).</div>
       <div class="dark-box" style="padding:14px 18px"><b style="color:#3CC168">Disminuida:</b> aumento menor de 5 cm. Orienta a rigidez lumbar, típica de la espondilitis anquilosante (lumbago inflamatorio).</div>
     </div>
+  </div>
+
+  <div class="pane" data-pane="met-man">
+    <p class="small" style="margin:0 0 6px;max-width:780px">Se realizan después de la movilidad y se eligen según la sospecha: tensión radicular si hay dolor irradiado, sacroilíacas si el lumbago es inflamatorio, examen neurológico siempre que haya radiculopatía.</p>
+    <div class="sub">Tensión radicular</div>
+    <p class="small" style="margin:-6px 0 12px">Estiran la raíz comprimida y reproducen el dolor irradiado. Practícalas en el simulador de signos.</p>
+    <div class="signs man">
+      <div class="sign"><h4><b>1</b>Lasègue</h4><div class="w">decúbito supino</div><p>Flexión pasiva de la cadera con la rodilla extendida.</p><div class="pos">(+) dolor irradiado por debajo de la rodilla entre 30° y 70° · raíces L5–S1</div></div>
+      <div class="sign dk"><h4><b>2</b>Lasègue cruzado</h4><div class="w">pierna sana</div><p>Se eleva la pierna NO afectada.</p><div class="pos">(+) dolor en la pierna afectada · muy específico de hernia discal</div></div>
+      <div class="sign y"><h4><b>3</b>Bragard</h4><div class="w">sensibiliza Lasègue</div><p>Descender la pierna 5–10° hasta que cede el dolor y forzar la dorsiflexión del pie.</p><div class="pos">(+) reaparece el dolor irradiado · tensión neural, no muscular</div></div>
+      <div class="sign y"><h4><b>4</b>Neri</h4><div class="w">supino o de pie</div><p>Flexión del cuello (mentón al pecho) en supino, o flexión del tronco de pie.</p><div class="pos">(+) dolor lumbar irradiado a la pierna; flexión espontánea de la rodilla afectada</div></div>
+      <div class="sign dk"><h4><b>5</b>Estiramiento femoral (Wassermann)</h4><div class="w">decúbito prono</div><p>Flexión de la rodilla o extensión de la cadera con la pelvis fija; es el Lasègue invertido.</p><div class="pos">(+) dolor en la cara anterior del muslo · raíces L2–L4</div></div>
+      <div class="sign"><h4><b>6</b>Slump</h4><div class="w">sentado al borde de la camilla</div><p>Encorvar el tronco, flexionar el cuello, extender la rodilla y llevar el pie a dorsiflexión.</p><div class="pos">(+) reproduce el dolor radicular y este cede al extender el cuello</div></div>
+    </div>
+    <div class="sub">Presión intrarraquídea</div>
+    <p class="small" style="margin:-6px 0 12px">Aumentan la presión del líquido cefalorraquídeo y empujan la hernia contra la raíz.</p>
+    <div class="signs man">
+      <div class="sign y"><h4><b>7</b>Valsalva</h4><div class="w">sentado o de pie</div><p>Pujar con la glotis cerrada, como al defecar.</p><div class="pos">(+) aumenta el dolor lumbar o irradiado · hernia discal, tumor intrarraquídeo</div></div>
+      <div class="sign"><h4><b>8</b>Tríada de Dejerine</h4><div class="w">interrogatorio</div><p>Preguntar si la tos, el estornudo o el pujo aumentan el dolor.</p><div class="pos">(+) dolor que se exacerba con los tres · compresión radicular</div></div>
+    </div>
+    <div class="sub">Articulaciones sacroilíacas</div>
+    <p class="small" style="margin:-6px 0 12px">Diferencian el dolor sacroilíaco del dolor lumbar o de cadera.</p>
+    <div class="signs man">
+      <div class="sign dk"><h4><b>9</b>Patrick (FABERE)</h4><div class="w">decúbito supino</div><p>Flexión, abducción y rotación externa de la cadera (pie sobre la rodilla contraria, en «4»); presionar la rodilla y la espina ilíaca anterosuperior contralateral.</p><div class="pos">(+) dolor sacroilíaco posterior · sacroileítis; si duele la ingle, pensar en cadera</div></div>
+      <div class="sign"><h4><b>10</b>Gaenslen</h4><div class="w">supino al borde de la camilla</div><p>Flexionar una cadera hacia el pecho y dejar caer la otra pierna en extensión fuera de la camilla.</p><div class="pos">(+) dolor sacroilíaco del lado extendido</div></div>
+    </div>
+    <div class="sub">Examen neurológico por raíz</div>
+    <p class="small" style="margin:-6px 0 12px">Localiza la raíz comprometida.</p>
+    <div class="signs man">
+      <div class="sign"><h4><b>11</b>Marcha en talones</h4><div class="w">de pie</div><p>Caminar apoyado solo en los talones (dorsiflexión del pie).</p><div class="pos">(+) no lo logra · debilidad L4–L5 (pie caído en L5)</div></div>
+      <div class="sign"><h4><b>12</b>Marcha en puntas</h4><div class="w">de pie</div><p>Caminar apoyado en la punta de los pies (flexión plantar).</p><div class="pos">(+) no lo logra · debilidad S1</div></div>
+      <div class="sign y"><h4><b>13</b>Reflejos osteotendinosos</h4><div class="w">sentado</div><p>Rotuliano y aquíleo, comparando ambos lados.</p><div class="pos">Rotuliano disminuido: L4 · aquíleo disminuido: S1 · L5 no tiene reflejo confiable</div></div>
+      <div class="sign dk"><h4><b>14</b>Signo de Hoover</h4><div class="w">decúbito supino</div><p>Mano bajo el talón sano mientras el paciente intenta elevar la pierna «débil».</p><div class="pos">Sin presión hacia abajo en el talón sano: falta de esfuerzo, debilidad no orgánica</div></div>
+    </div>
+    <div style="margin-top:16px"><a class="btn dk" href="#signos">Practicar Lasègue, Bragard y Neri en el simulador</a></div>
   </div>
 </div></section>
 
